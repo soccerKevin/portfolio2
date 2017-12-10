@@ -17,6 +17,7 @@
       -moz-border-radius: 50%;
       border-radius: 50%;
       position: absolute;
+      z-index: 10;
       top: 2.5rem;
       left: 2.5rem;
     }
@@ -78,6 +79,9 @@
         padding: 2.5rem 1rem 1rem 2rem;
         letter-spacing: .1rem;
         text-align: right;
+        position: relative;
+
+        &.experience{ top: 8rem; }
       }
 
       .social{
@@ -99,6 +103,7 @@
       background: rgba(255, 255, 255, .8);
 
       section{
+        position: relative;
         margin: 2% 6%;
 
         &:first-child{
@@ -120,6 +125,42 @@
           font-size: 1.5rem;
           color: #444;
           line-height: 1.8rem;
+        }
+      }
+    }
+  }
+}
+
+section.experience{
+  top: 13.5rem;
+  font-size: 1.6rem;
+
+  .role{
+    margin-top: 2rem;
+
+    .info{
+      display: flex;
+      justify-content: space-between;
+    }
+
+    ul{
+      display: block;
+      margin-top: 2rem;
+
+      li {
+        list-style-type: disc;
+        margin-left: 3rem;
+        line-height: 2rem;
+      }
+    }
+
+    ul.project{
+      li{
+        list-style-type: circle;
+
+        &:first-child{
+          margin-left: 1.8rem;
+          list-style-type: disc;
         }
       }
     }

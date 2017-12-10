@@ -17,13 +17,89 @@
   .resume_body
     .left
       .section_title.about ABOUT
-      .social
-        .linkedin
-          img src=image_path('social/linkedin')
-        .github
-          img src=image_path('social/github')
+      .section_title.experience EXPERIENCE
+      / .social
+      /   .linkedin
+      /     img src=image_path('social/linkedin')
+      /   .github
+      /     img src=image_path('social/github')
     .right
       section.about
         .text
           | I am a full-stack developer with a background in front-end development. I love  learning and solving puzzles.  In my spare time, I run, play soccer and video games and spend time with my family.  I’m looking for a challenging full-stack position that will provide me with an opportunity to utilize my experience and skills while continuing to learn.
+
       section.experience
+        .role
+          .info
+            .job_title Full Stack Developer
+            .company Getty Images
+            .date Oct 2015 - Dec 2017
+
+          ul.project
+            li First Consumer facing site (Teaspoon, CoffeeScript, RoR, Getty search API)
+            li Created custom carousels to engage casual users of the site
+            li Worked with our tracking team to measure user interaction and hot spots
+
+          ul.project
+            li Advertisement Gem (CoffeeScript, Teaspoon, Index Exchange, Google and Amazon Ads)
+            li Created and maintained the advertisement gem which served up ads from Google, Amazon and Index Exchange throughout the site
+            li Exposed Slim and JS templates for easy advertisement creation and updating from the Server or the Client
+            li Provided client-side tracking Omniture and Google Tag Manager
+
+          ul.project
+            li Search Testing suite (Teaspoon, Jasmine, Rake)
+            li Created a data driven teaspoon testing suite for the front facing search experience.
+            li This allowed us to easily determine which search refinements should be on the page for any given search scenario
+
+          ul.project
+            li Olympic and Election 2016 landing pages (Autonomy, RoR, Coffee Script, SCSS)
+            li Created components and pages with Autonomy to provide a CMS interface to update our Olympic and Election 2016 pages.
+            li Created the responsive layouts for these pages and the controller which consumed the Autonomy endpoints
+
+          ul.project
+            li 360° content (Panellum, DC/OS, Docker)
+            li Integrated the Panellum 360° image viewer onto the site which allowed users to view our 360° content inline on the page
+            li Transferred our innovation team’s custom 360° image navigator to our live DC/OS instances to make it accessible to the public
+
+          ul.project
+            li Year in Focus (AMP, Jinja, Google Sheet, Ruby, Rake, Gulp, YAML, Drop Box, DC/OS)
+            li Transformed data from a Google Sheet into YAML files which generated pages for our Year in Focus 2016 app
+            li This allowed the curators to enter content into an online spreadsheet and images into an online drop box, which we would then ingest using the tool I created to generate the pages of the project in close to real time
+
+          ul.project
+            li Updated the business facing search app UI (Angular, RoR, CoffeeScript, JQuery)
+            li Changed how the user navigates and changes top level searches
+            li Handling the changing of scopes and auto corrected searches on both the client and server sides
+
+        .role
+          .info
+            .job_title Assistant Teacher
+            .company Code Fellows
+            .date Aug - Oct 2015
+
+          ul.bullet_points
+            li Delivered lectures on data structures, precompilers and object oriented programming
+            li Graded papers and answered student’s questions
+            li Administered white-board challenges
+
+        .role
+          .info
+            .job_title Junior Developer
+            .company Rao and Pierce
+            .date June - Sept 2015
+
+          ul.bullet_points
+            li Designed and developed the UI and database of a legal case management and calendar app called Case Hawk (Angular, Coffee Script, UI Design, RoR)
+            li Transferred existing invalidated (containing bad data or unfilled yet required fields) MySQL database to a new validated MySQL DB (Postgres, Heroku, Ruby, Rake, CSV)
+            li Finished the initial development of this student produced app and made it available for in house use
+
+        .role
+          .info
+            .job_title Junior front-end Developer
+            .company Sesame Communications
+            .date May 2012 - Nov 2015
+
+          ul.bullet_points
+            li Worked on over 1,500 different sites for over 1,000 different clients
+            li.indent Updated CSS and Java Script to meet the client’s site needs and business information
+            li Customized slideshows and carousels for preproduction and postproduction client sites (PHP, Java Script)
