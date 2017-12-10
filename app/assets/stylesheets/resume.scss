@@ -130,6 +130,19 @@
   }
 }
 
+section.technologies{
+  .tech_group{
+    .group_name{
+      font-size: 1.8rem;
+      letter-spacing: .1rem;
+    }
+
+    .group_icons{
+      display: flex;
+    }
+  }
+}
+
 section.experience{
   top: 9.5rem;
 

@@ -1,0 +1,90 @@
+Markup:
+  animation:
+    label: CSS/JS Animation
+    proficiency: 5
+  html:
+    label: HTML5
+    proficiency: 5
+  css:
+    label: CSS3
+    proficiency: 5
+  sass:
+    label: SASS
+    proficiency: 5
+
+Scripting Languages:
+  ruby:
+    label: Ruby
+    proficiency: 4.5
+  js:
+    label: Coffee Script and JS
+    proficiency: 4.5
+  java:
+    label: Java
+    proficiency: 2
+  php:
+    label: PHP
+    proficiency: 2
+  c#:
+    label: C#
+    proficiency: 1
+Frameworks:
+  jquery:
+    label: JQuery
+    proficiency: 5
+  rails:
+    label: Rails
+    proficiency: 4
+  angular:
+    label: Angular
+    proficiency: 3
+  react:
+    label: React
+    proficiency: 2
+  express:
+    label: Express
+    proficiency: 1
+Databases and APIs:
+  api:
+    label: REST API services
+    proficiency: 4
+  rails:
+    label: Active Record
+    proficiency: 4
+  postgres:
+    label: PostgreSQL
+    proficiency: 3
+  Mongo:
+    label: Mongo/Mongoose
+    proficiency: 2
+Services:
+  Gitlab:
+    label: Gitlab
+  Anthill:
+    label: Anthill
+  AWS:
+    label: AWS
+  S3:
+    label: S3
+  EC2:
+    label: EC2
+  DC/OS:
+    label: DC/OS
+  Splunk:
+    label: Splunk
+  Docker:
+    label: Docker
+Tracking:
+  gtm:
+    label: Google Tag Manager
+  omniture:
+    label: Omniture
+  jaguar:
+    label: Jaguar
+Testing:
+  jasmine:
+    label: Jasmine
+  teaspoon:
+    label: Teaspoon
+  rspec:
+    label: RSpec

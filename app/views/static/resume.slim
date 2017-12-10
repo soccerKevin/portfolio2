@@ -16,6 +16,7 @@
 
   .resume_body
     .left
+      .section_title.technologies Technologies
       .section_title.experience EXPERIENCE
       / .social
       /   .linkedin
@@ -23,6 +24,9 @@
       /   .github
       /     img src=image_path('social/github')
     .right
+      section.technologies
+        = render 'static/technologies', technologies: technologies
+
       section.experience
         .role
           .info
@@ -98,3 +102,4 @@
             li Worked on over 1,500 different sites for over 1,000 different clients
             li.indent Updated CSS and Java Script to meet the client’s site needs and business information
             li Customized slideshows and carousels for preproduction and postproduction client sites (PHP, Java Script)
+
