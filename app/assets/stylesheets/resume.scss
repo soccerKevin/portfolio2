@@ -80,8 +80,6 @@
         letter-spacing: .1rem;
         text-align: right;
         position: relative;
-
-        &.experience{ top: 8rem; }
       }
 
       .social{
@@ -104,6 +102,7 @@
 
       section{
         position: relative;
+        font-size: 1.4rem;
         margin: 2% 6%;
 
         &:first-child{
@@ -132,8 +131,7 @@
 }
 
 section.experience{
-  top: 13.5rem;
-  font-size: 1.6rem;
+  top: 9.5rem;
 
   .role{
     margin-top: 2rem;
@@ -141,16 +139,17 @@ section.experience{
     .info{
       display: flex;
       justify-content: space-between;
+      font-size: 1.8rem;
     }
 
     ul{
       display: block;
-      margin-top: 2rem;
+      margin-top: 1rem;
 
       li {
         list-style-type: disc;
         margin-left: 3rem;
-        line-height: 2rem;
+        line-height: 1.8rem;
       }
     }
 
