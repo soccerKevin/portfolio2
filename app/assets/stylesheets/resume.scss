@@ -17,8 +17,8 @@
       -moz-border-radius: 50%;
       border-radius: 50%;
       position: absolute;
-      top: 4.5rem;
-      left: 3rem;
+      top: 2.5rem;
+      left: 2.5rem;
     }
 
     .info{
@@ -62,11 +62,23 @@
     display: flex;
 
     .left{
-      flex-basis: 29%;
-      min-width: 29%;
+      flex-basis: 20%;
+      min-width: 20%;
       min-height: 80rem;
-      padding-top: 18rem;
+      padding-top: 8.4rem;
       background: rgba(150, 150, 150, .8);
+
+      .section_title{
+        width: 100%;
+        color: white;
+        background: rgba(60, 174, 162, .8);
+        font-size: 2.2rem;
+        font-weight: bold;
+        box-sizing: border-box;
+        padding: 2.5rem 1rem 1rem 2rem;
+        letter-spacing: .1rem;
+        text-align: right;
+      }
 
       .social{
         display: flex;
@@ -89,8 +101,11 @@
       section{
         margin: 2% 6%;
 
-        &:first-child{ margin: 6%; }
-
+        &:first-child{
+          position: relative;
+          top: 8rem;
+          margin-top: 0;
+        }
 
         .title{
           font-size: 2.2rem;
