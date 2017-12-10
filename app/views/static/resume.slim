@@ -1,0 +1,15 @@
+- content_for :stylesheet do
+  = stylesheet_link_tag 'resume'
+
+.resume.container
+  .intro
+    img.me src = image_path('me')
+
+    .info
+      .name KEVIN TOWNSEND
+      .title Web Engineer
+      .social
+        .linkedin
+          img src=image_path('social/linkedin')
+        .github
+          img src=image_path('social/github')
