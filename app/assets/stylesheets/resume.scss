@@ -17,14 +17,15 @@
       -moz-border-radius: 50%;
       border-radius: 50%;
       position: absolute;
-      top: 7.5rem;
+      top: 4.5rem;
       left: 3rem;
     }
 
     .info{
+      margin-top: 4rem;
+      margin-bottom: 2rem;
+
       .name{
-        margin-top: 3rem;
-        margin-bottom: .8rem;
         font-size: 3.8rem;
         color: white;
         letter-spacing: .08em;
@@ -35,6 +36,37 @@
         letter-spacing: .05em;
         color: white;
       }
+
+      .extras{
+        display: flex;
+
+        .location, .phone, .email{
+          margin-top: 2.5rem;
+          font-size: 1.4rem;
+          color: white;
+          border-right: .2rem solid white;
+          padding: 0rem 1rem;
+
+          &:first-child{ padding-left: 0; }
+
+          &:last-child{
+            border-right: none;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .resume_body{
+    display: flex;
+
+    .left{
+      flex-basis: 28rem;
+      flex-grow: 0;
+      min-height: 80rem;
+      padding-top: 18rem;
+      background: rgba(150, 150, 150, .8);
 
       .social{
         display: flex;
@@ -49,6 +81,11 @@
           margin-left: 0;
         }
       }
+    }
+
+    .right{
+      flex-grow: 1;
+      background: rgba(255, 255, 255, .8);
     }
   }
 }
