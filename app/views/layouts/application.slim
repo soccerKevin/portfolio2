@@ -6,8 +6,6 @@ html
     = render 'shared/fonts'
     = stylesheet_link_tag 'application'
     = yield :stylesheet
-  body[
-    class = controller.action_name
-  ]
+  body class=controller.action_name
     = render 'shared/header'
     = yield
