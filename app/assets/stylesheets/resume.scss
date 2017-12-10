@@ -62,8 +62,8 @@
     display: flex;
 
     .left{
-      flex-basis: 28rem;
-      flex-grow: 0;
+      flex-basis: 29%;
+      min-width: 29%;
       min-height: 80rem;
       padding-top: 18rem;
       background: rgba(150, 150, 150, .8);
@@ -84,8 +84,26 @@
     }
 
     .right{
-      flex-grow: 1;
       background: rgba(255, 255, 255, .8);
+
+      section{
+        padding: 6%;
+
+        .title{
+          font-size: 2.2rem;
+          font-weight: bold;
+          padding-bottom: .6rem;
+          border-bottom: solid .3rem rgba(150, 150, 150, .8);
+          color: rgb(60, 174, 162);
+          margin-bottom: 1rem;
+        }
+
+        .text{
+          font-size: 1.5rem;
+          color: #444;
+          line-height: 1.8rem;
+        }
+      }
     }
   }
 }
