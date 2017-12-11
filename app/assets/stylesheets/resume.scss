@@ -132,9 +132,10 @@
 
 section.technologies{
   .tech_group{
-    margin-top: 2rem;
-
     .group_name{
+      position: absolute;
+      top: .8rem;
+      left: 1.5rem;
       font-size: 1.8rem;
       letter-spacing: .1rem;
     }
@@ -144,15 +145,22 @@ section.technologies{
       flex-wrap: wrap;
 
       .technology{
-        margin: 1rem;
-        img{ display: block; }
+        max-width: 30%;
+        max-height: 30%;
+        margin: 1.5%;
+
+        img{
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
       }
     }
   }
 }
 
 section.experience{
-  top: 9.5rem;
+  top: 42.5rem;
 
   .role{
     margin-top: 2rem;
@@ -187,52 +195,59 @@ section.experience{
   }
 }
 
+.cube_wrap{
+  position: absolute;
+  left: 5rem;
+}
+
 .cube {
   position: relative;
   z-index: 100;
-  width: 340px;
+  width: 260px;
   transform-style: preserve-3d;
 
   &.spin { animation: spin 5s infinite linear; }
 
   > div {
     position: absolute;
-    width: 340px;
-    height: 340px;
+    width: 260px;
+    height: 260px;
     box-sizing: border-box;
+    padding-top: 3em;
     background: rgba(255, 255, 255, 1);
   }
 
   .back {
-    transform: translateZ(-170px) rotateY(180deg);
+    transform: translateZ(-130px) rotateY(180deg);
   }
 
   .right {
-    transform: rotateY(-270deg) translateX(170px);
+    transform: rotateY(-270deg) translateX(130px);
     transform-origin: top right;
   }
 
   .left {
-    transform: rotateY(270deg) translateX(-170px);
+    transform: rotateY(270deg) translateX(-130px);
     transform-origin: center left;
   }
 
   .top {
-    transform: rotateX(-90deg) translateY(-170px);
+    transform: rotateX(-90deg) translateY(-130px);
     transform-origin: top center;
   }
 
   .bottom {
-    transform: rotateX(90deg) translateY(170px);
+    transform: rotateX(90deg) translateY(130px);
     transform-origin: bottom center;
   }
 
   .front {
-    transform: translateZ(170px);
+    transform: translateZ(130px);
   }
 }
 
 @keyframes spin {
-  from { transform: rotateX(5deg) rotateY(0deg) rotateZ(-15deg); }
-  to { transform: rotateX(5deg) rotateY(360deg) rotateZ(-15deg); }
+  from { transform: rotateX(5deg) rotateY(0deg) rotateZ(-12deg); }
+  to { transform: rotateX(5deg) rotateY(180deg) rotateZ(-12deg); }
+  to { transform: rotateX(5deg) rotateY(360deg) rotateZ(-12deg); }
 }
