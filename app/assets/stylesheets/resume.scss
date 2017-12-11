@@ -189,6 +189,7 @@ section.experience{
 
 .cube {
   position: relative;
+  z-index: 100;
   width: 340px;
   transform-style: preserve-3d;
 
@@ -199,41 +200,35 @@ section.experience{
     width: 340px;
     height: 340px;
     box-sizing: border-box;
-    border: solid 1px rgba(0, 0, 0, .8);
+    background: rgba(255, 255, 255, 1);
   }
 
   .back {
     transform: translateZ(-170px) rotateY(180deg);
-    background: rgba(90, 90, 90, .8);
   }
 
   .right {
     transform: rotateY(-270deg) translateX(170px);
     transform-origin: top right;
-    background: rgba(90, 90, 90, .8);
   }
 
   .left {
     transform: rotateY(270deg) translateX(-170px);
     transform-origin: center left;
-    background: rgba(90, 90, 90, .8);
   }
 
   .top {
     transform: rotateX(-90deg) translateY(-170px);
     transform-origin: top center;
-    background: rgba(90, 90, 90, .8);
   }
 
   .bottom {
     transform: rotateX(90deg) translateY(170px);
     transform-origin: bottom center;
-    background: rgba(90, 90, 90, .8);
   }
 
   .front {
     transform: translateZ(170px);
-    background: rgba(90, 90, 90, .8);
   }
 }
 
