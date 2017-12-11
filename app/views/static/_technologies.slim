@@ -1,6 +1,10 @@
-- technologies.each do |group_name, group|
-  .tech_group
-    .group_name = group_name
-    .group_icons
-      - group.each do |tech_name, tech|
-        = render 'static/technology', name: tech_name, technology: tech
+.wrap
+  .cube.spin
+    - sides = ['front', 'back', 'top', 'bottom', 'left', 'right']
+    - technologies.each_with_index do |(group_name, group), i|
+      div class=sides[i]
+        .tech_group
+          .group_name = group_name
+          .group_icons
+            - group.each do |tech_name, tech|
+              = render 'static/technology', name: tech_name, technology: tech
