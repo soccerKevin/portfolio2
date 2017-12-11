@@ -99,15 +99,14 @@ Services:
   Docker:
     label: Docker
     img: docker
-# Tracking:
-#   gtm:
-#     label: Google Tag Manager
-#     img: gtm
-#   omniture:
-#     label: Omniture
-#   jaguar:
-#     label: Jaguar
-Testing:
+Tracking and Testing:
+  gtm:
+    label: Google Tag Manager
+    img: gtm
+  omniture:
+    label: Omniture
+  jaguar:
+    label: Jaguar
   jasmine:
     label: Jasmine
     img: jasmine
