@@ -4,45 +4,58 @@ Markup:
     proficiency: 5
   html:
     label: HTML5
+    img: html
     proficiency: 5
   css:
     label: CSS3
+    img: css
     proficiency: 5
   sass:
     label: SASS
+    img: sass
     proficiency: 5
 
 Scripting Languages:
   ruby:
     label: Ruby
+    img: ruby
     proficiency: 4.5
   js:
     label: Coffee Script and JS
+    img: js
     proficiency: 4.5
   java:
     label: Java
+    img: java
     proficiency: 2
   php:
     label: PHP
+    img: php
     proficiency: 2
   c#:
     label: C#
+    img: c#
     proficiency: 1
 Frameworks:
   jquery:
     label: JQuery
+    img: jquery
     proficiency: 5
   rails:
     label: Rails
+    img: rails
     proficiency: 4
   angular:
     label: Angular
+    img: angular
     proficiency: 3
   react:
     label: React
+    img: react
     proficiency: 2
   express:
     label: Express
+    img: express
     proficiency: 1
 Databases and APIs:
   api:
@@ -53,30 +66,45 @@ Databases and APIs:
     proficiency: 4
   postgres:
     label: PostgreSQL
+    img: postgres
     proficiency: 3
   Mongo:
-    label: Mongo/Mongoose
+    label: Mongo
+    img: mongo
+    proficiency: 2
+  Mongoose:
+    label: Mongoose
+    img: mongoose
     proficiency: 2
 Services:
   Gitlab:
     label: Gitlab
+    img: gitlab
   Anthill:
     label: Anthill
+    img: anthill
   AWS:
     label: AWS
+    img: aws
   S3:
     label: S3
+    img: s3
   EC2:
     label: EC2
+    img: ec2
   DC/OS:
     label: DC/OS
+    img: dcos
   Splunk:
     label: Splunk
+    img: splunk
   Docker:
     label: Docker
+    img: docker
 Tracking:
   gtm:
     label: Google Tag Manager
+    img: gtm
   omniture:
     label: Omniture
   jaguar:
@@ -84,7 +112,13 @@ Tracking:
 Testing:
   jasmine:
     label: Jasmine
+    img: jasmine
   teaspoon:
     label: Teaspoon
+    img: teaspoon
+  mocha:
+    label: Mocha
+    img: mocha
   rspec:
     label: RSpec
+    img: rspec
