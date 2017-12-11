@@ -76,10 +76,14 @@
         font-size: 2.2rem;
         font-weight: bold;
         box-sizing: border-box;
-        padding: 2.5rem 1rem 1rem 2rem;
+        padding: 1rem 1rem 1rem 2rem;
         letter-spacing: .1rem;
         text-align: right;
         position: relative;
+
+        &:first-child{ padding-top: 2.5rem; }
+
+        &.experience{ top: 30rem; }
       }
 
       .social{
@@ -145,9 +149,11 @@ section.technologies{
       flex-wrap: wrap;
 
       .technology{
-        max-width: 30%;
-        max-height: 30%;
-        margin: 1.5%;
+        max-width: 25%;
+        max-height: 25%;
+        margin: 2% 4%;
+
+        &:nth-child(-n + 4){ margin-top: 0; }
 
         img{
           display: block;
