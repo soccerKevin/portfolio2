@@ -132,6 +132,8 @@
 
 section.technologies{
   .tech_group{
+    margin-top: 2rem;
+
     .group_name{
       font-size: 1.8rem;
       letter-spacing: .1rem;
@@ -139,6 +141,11 @@ section.technologies{
 
     .group_icons{
       display: flex;
+
+      .technology{
+        margin: 1rem;
+        img{ display: block; }
+      }
     }
   }
 }

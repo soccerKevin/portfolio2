@@ -1,8 +1,11 @@
 .technology class=name
-  - begin image_path("technologies/#{technology['img']}")
-    img src=image_path("technologies/#{technology['img']}")
-  - rescue
-    .img_logo=technologies['label']
+
+  - if technology['img'].present?
+    - begin image_path("technologies/#{technology['img']}")
+      img src=image_path("technologies/#{technology['img']}")
+    - rescue
+  - else
+    .img_logo =technology['label']
 
   - if technology['proficiency'].present?
     .skill_level = technology['proficiency']

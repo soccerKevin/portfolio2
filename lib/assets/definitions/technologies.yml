@@ -3,7 +3,6 @@ Markup:
     label: CSS/JS Animation
     proficiency: 5
   html:
-    label: HTML5
     img: html
     proficiency: 5
   css:
@@ -33,8 +32,7 @@ Scripting Languages:
     img: php
     proficiency: 2
   c#:
-    label: C#
-    img: c#
+    img: c_sharp
     proficiency: 1
 Frameworks:
   jquery:
@@ -59,7 +57,7 @@ Frameworks:
     proficiency: 1
 Databases and APIs:
   api:
-    label: REST API services
+    img: rest
     proficiency: 4
   rails:
     label: Active Record
