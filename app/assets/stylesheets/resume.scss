@@ -62,7 +62,7 @@
   .resume_body{
     display: flex;
 
-    .left{
+    .resume_left{
       flex-basis: 20%;
       min-width: 20%;
       min-height: 80rem;
@@ -97,7 +97,7 @@
       }
     }
 
-    .right{
+    .resume_right{
       background: rgba(255, 255, 255, .8);
 
       section{
@@ -184,4 +184,61 @@ section.experience{
       }
     }
   }
+}
+
+.cube {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+
+  &.spin {
+  animation: spin 5s infinite linear;
+  }
+
+  div {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    box-sizing: border-box;
+    border: solid 1px rgba(0, 0, 0, .8);
+  }
+
+  .back {
+    transform: translateZ(-100px) rotateY(180deg);
+    background: rgba(0, 0, 255, .9);
+  }
+
+  .right {
+    transform: rotateY(-270deg) translateX(100px);
+    transform-origin: top right;
+    background: rgba(0, 255, 0, .9);
+  }
+
+  .left {
+    transform: rotateY(270deg) translateX(-100px);
+    transform-origin: center left;
+    background: rgba(255, 0, 0, .9);
+  }
+
+  .top {
+    transform: rotateX(-90deg) translateY(-100px);
+    transform-origin: top center;
+    background: rgba(140, 140, 140, .9);
+  }
+
+  .bottom {
+    transform: rotateX(90deg) translateY(100px);
+    transform-origin: bottom center;
+    background: rgba(200, 200, 200, .9);
+  }
+
+  .front {
+    transform: translateZ(100px);
+    background: rgba(200, 200, 200, .9);
+  }
+}
+
+@keyframes spin {
+  from { transform: rotateX(5deg) rotateY(0deg) rotateZ(-15deg); }
+  to { transform: rotateX(5deg) rotateY(360deg) rotateZ(-15deg); }
 }

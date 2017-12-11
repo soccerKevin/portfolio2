@@ -15,7 +15,7 @@
         .email soccerkevint11@gmail.com
 
   .resume_body
-    .left
+    .resume_left
       .section_title.technologies Technologies
       .section_title.experience EXPERIENCE
       / .social
@@ -23,8 +23,9 @@
       /     img src=image_path('social/linkedin')
       /   .github
       /     img src=image_path('social/github')
-    .right
+    .resume_right
       section.technologies
+        = render 'static/play_cube'
         = render 'static/technologies', technologies: technologies
 
       section.experience
@@ -83,7 +84,7 @@
 
         .role
           .info
-            .job_title Junior Developer
+            .job_title Junior Full-Stack Developer
             .company Rao and Pierce
             .date June - Sept 2015
 
@@ -94,7 +95,7 @@
 
         .role
           .info
-            .job_title Junior front-end Developer
+            .job_title Junior Front-end Developer
             .company Sesame Communications
             .date May 2012 - Nov 2015
 
