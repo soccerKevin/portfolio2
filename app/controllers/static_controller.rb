@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-  include TechnologiesHelper
+  include TechnologiesHelper, RubiksHelper
 
   def home
   end
