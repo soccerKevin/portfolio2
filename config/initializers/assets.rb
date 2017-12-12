@@ -17,4 +17,5 @@ Rails.application.config.assets.precompile += %w(
   resume.css
   technologies.yml
   technologies/*
+  rubiks_cube.js
 )

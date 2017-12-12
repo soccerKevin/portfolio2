@@ -1,5 +1,7 @@
 {
   "name": "resume",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
 }

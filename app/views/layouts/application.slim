@@ -4,8 +4,10 @@ html
     title Kevin Townsend
     = csrf_meta_tags
     = render 'shared/fonts'
+    = javascript_include_tag  'application'
     = stylesheet_link_tag 'application'
     = yield :stylesheet
+    = yield :js
   body class=controller.action_name
     = render 'shared/header'
     = yield
