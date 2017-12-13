@@ -287,10 +287,11 @@ section.technologies{
     background: black;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 
     .piece{
       width: 31%;
-      margin: 1%;
+      height: 32%;
     }
 
     &.white  .piece{ background: white; }
