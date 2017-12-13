@@ -1,5 +1,4 @@
 $rubiks_cube_width: 8rem;
-$rubiks_area_width: 30rem;
 
 .resume.container{
   -webkit-box-shadow: 4px 14px 20px 5px rgba(0, 0, 0, 0.65);
@@ -266,12 +265,24 @@ section.technologies{
 
 .wrap.rubiks{
   position: absolute;
-  height: $rubiks_area_width;
-  width: $rubiks_area_width;
+  height: $rubiks_cube_width * 3;
+  width: $rubiks_cube_width * 4;
   right: 3rem;
+  z-index: 110;
 }
 
 .cube.rubiks{
+  position: absolute;
+  left: 38%;
+  top: 34%;
+  width: $rubiks_cube_width;
+  height: $rubiks_cube_width;
+  transform-origin: center center;
+
+  &.start_position{
+    transform: rotateX(345deg) rotateY(10deg)!important;
+  }
+
   .face{
     background: black;
     display: flex;
@@ -291,8 +302,8 @@ section.technologies{
   }
 }
 
-@keyframes spin {
-  from { transform: rotateX(5deg) rotateY(0deg) rotateZ(-12deg); }
-  to { transform: rotateX(5deg) rotateY(180deg) rotateZ(-12deg); }
-  to { transform: rotateX(5deg) rotateY(360deg) rotateZ(-12deg); }
-}
+// @keyframes spin {
+//   from { transform: rotateX(5deg) rotateY(0deg) rotateZ(-12deg); }
+//   to { transform: rotateX(5deg) rotateY(180deg) rotateZ(-12deg); }
+//   to { transform: rotateX(5deg) rotateY(360deg) rotateZ(-12deg); }
+// }
